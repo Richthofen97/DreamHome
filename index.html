@@ -7,208 +7,33 @@
     <title>find your dream home!</title>
   </head>
   <body>
-    <!-- start bereich header -->
-    <!-- wird bearbeitet von nikolai -->
-    <header class="bg-[#fef7f2] h-16">
-      <nav class="flex items-center justify-between p-4">
-        <div>Logo</div>
-        <ul class="flex gap-6">
-          <li><a href="#">Home</a></li>
-          <li><a href="#">Service</a></li>
-          <li><a href="#">Agents</a></li>
-          <li><a href="#">Contact</a></li>
-        </ul>
+    <div id="header-placeholder"></div>
+    <div id="hero-placeholder"></div>
+    <div id="search-placeholder"></div>
+    <div id="Section1-placeholder"></div>
+    <div id="Section2-placeholder"></div>
+    <div id="Section3-placeholder"></div>
+    <div id="Section4-placeholder"></div>
+    <div id="Section5-placeholder"></div>
+    <div id="Footer-placeholder"></div>
+    <script>
+      const loadSection = (id, file) => {
+        fetch(file)
+          .then((response) => response.text())
+          .then((html) => {
+            document.getElementById(id).innerHTML = html;
+          });
+      };
 
-        <div class="flex">
-          <a href="#"><img src="#" alt="Search" /></a>
-          <a href="#"><img src="#" alt="Account" /></a>
-          <button class="rounded-lg text-amber-50 bg-[#2b1b12]">Sign Up</button>
-        </div>
-      </nav>
-    </header>
-    <!-- ende bereich header -->
-
-    <!-- start bereich hero -->
-    <!-- wird bearbeitet von qian -->
-    <hero></hero>
-    <!-- ende bereich hero -->
-
-    <!-- start bereich suchleiste -->
-    <!-- wird bearbeitet von qian -->
-    <search></search>
-    <!-- ende bereich suchleiste -->
-
-    <!-- start bereich "we help you to find your dream home" -->
-    <!-- wird bearbeitet von nikolai -->
-    <section class="flex">
-      <div><img src="#" alt="#" /></div>
-      <div>
-        <h2>We Help You To Find Your Dream Home</h2>
-        <p>
-          From cozy cottages to luxurious estates, our dedicated team guides you
-          through every step of the journey, ensuring your dream home becomes a
-          realit
-        </p>
-      </div>
-      <ul>
-        <li>
-          <div>8K+</div>
-          <div>Houses Available</div>
-        </li>
-        <li>
-          <div>6K+</div>
-          <div>Houses Sold</div>
-        </li>
-        <li>
-          <div>2K+</div>
-          <div>Trustet Agents</div>
-        </li>
-      </ul>
-    </section>
-    <!-- ende bereich "we help you to find your dream home" -->
-
-    <!-- start bereich "why choose us" -->
-    <!-- wird bearbeitet von nikolai -->
-    <section>
-      <h2>Why Choose Us</h2>
-      <p>
-        Elevating Your Home Buying Experience with Expertise, Integrity, and
-        Unmatched Personalized Service
-      </p>
-      <div>
-        <ul>
-          <li>
-            <img src="#" alt="#" />
-            <p>Expert Guidance</p>
-            <p>
-              Benefit from our team's seasoned expertise for a smooth buying
-              experience
-            </p>
-          </li>
-          <li>
-            <img src="#" alt="#" />
-            <p>Personalized Service</p>
-            <p>
-              Our services adapt to your unique needs, making your journey
-              stress-free
-            </p>
-          </li>
-          <li>
-            <img src="#" alt="#" />
-            <p>Transparent Process</p>
-            <p>
-              Stay informed with our clear and honest approach to buying your
-              home
-            </p>
-          </li>
-          <li>
-            <img src="#" alt="#" />
-            <p>Exceptional Support</p>
-            <p>
-              Providing peace of mind with our responsive and attentive customer
-              service
-            </p>
-          </li>
-        </ul>
-      </div>
-    </section>
-    <!-- ende bereich "why choose us" -->
-
-    <!-- start bereich "our popular residences"-->
-    <!-- wird bearbeitet von nikolai -->
-    <section>
-      <!-- Card 1 -->
-      <article>
-        <img src="#" alt="#" />
-        <div>
-          <p><span>ICON</span> California</p>
-          <p>
-            <span><img src="#" alt="#" /></span>text
-            <span><img src="#" alt="#" /></span>text
-          </p>
-          <div>
-            <button>Sign up</button>
-            <span>Preisangabe</span>
-          </div>
-        </div>
-      </article>
-      <!-- Card 2 -->
-      <article>
-        <img src="#" alt="#" />
-        <div>
-          <p><span>ICON</span> California</p>
-          <p>
-            <span><img src="#" alt="#" /></span>text
-            <span><img src="#" alt="#" /></span>text
-          </p>
-          <div>
-            <button>Sign up</button>
-            <span>Preisangabe</span>
-          </div>
-        </div>
-      </article>
-      <!-- Card 3 -->
-      <article>
-        <img src="#" alt="#" />
-        <div>
-          <p><span>ICON</span> California</p>
-          <p>
-            <span><img src="#" alt="#" /></span>text
-            <span><img src="#" alt="#" /></span>text
-          </p>
-          <div>
-            <button>Sign up</button>
-            <span>Preisangabe</span>
-          </div>
-        </div>
-      </article>
-    </section>
-    <!-- ende bereich "our popular residences"-->
-
-    <!-- start bereich "what people say about dwello"-->
-    <!-- wird bearbeitet von qian-->
-    <section></section>
-    <!-- ende bereich "what people say about dwello"-->
-
-    <!-- start bereich "do you have any questions?"-->
-    <!-- wird bearbeitet von qian -->
-    <section></section>
-    <!-- ende bereich "do you have any questions?"-->
-
-    <!-- start bereich nikolai -->
-    <!-- wird bearbeitet von -->
-    <footer>
-      <div>
-        <img src="#" alt="Logo" />
-        <p>Bringing you closer to your dream home, one click at a time.</p>
-      </div>
-      <div>
-        <h3>About</h3>
-        <span href="#">Our Story</span>
-        <span href="#">Careers</span>
-        <span href="#">Our Team</span>
-        <span href="#">Resources</span>
-      </div>
-      <div>
-        <h3>Support</h3>
-        <span href="#">FAQ</span>
-        <span href="#">Contact Us</span>
-        <span href="#">Help Center</span>
-        <span href="#">Terms of Service</span>
-      </div>
-      <div>
-        <h3>Find Us</h3>
-        <span href="#">Events</span>
-        <span href="#">Locations</span>
-        <span href="#">Newsletter</span>
-      </div>
-      <div>
-        <h3>Our Social</h3>
-        <span href="#"><img src="#" alt="#" />Instagram</span>
-        <span href="#"><img src="#" alt="#" />Facebook</span>
-        <span href="#"><img src="#" alt="#" />Twitter (x)</span>
-      </div>
-    </footer>
-    <!-- ende bereich -->
+      loadSection("header-placeholder", "header.html");
+      loadSection("hero-placeholder", "hero.html");
+      loadSection("search-placeholder", "search.html");
+      loadSection("Section1-placeholder", "section1.html");
+      loadSection("Section2-placeholder", "section2.html");
+      loadSection("Section3-placeholder", "section3.html");
+      loadSection("Section4-placeholder", "section4.html");
+      loadSection("Section5-placeholder", "section5.html");
+      loadSection("footer-placeholder", "footer.html");
+    </script>
   </body>
 </html>
