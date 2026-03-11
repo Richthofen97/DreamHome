@@ -1,39 +1,20 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-    <title>find your dream home!</title>
-  </head>
-  <body>
-    <div id="header-placeholder"></div>
-    <div id="hero-placeholder"></div>
-    <div id="search-placeholder"></div>
-    <div id="Section1-placeholder"></div>
-    <div id="Section2-placeholder"></div>
-    <div id="Section3-placeholder"></div>
-    <div id="Section4-placeholder"></div>
-    <div id="Section5-placeholder"></div>
-    <div id="footer-placeholder"></div>
-    <script>
-      const loadSection = (id, file) => {
-        fetch(file)
-          .then((response) => response.text())
-          .then((html) => {
-            document.getElementById(id).innerHTML = html;
-          });
-      };
+    <title>Find Your Dream Home</title>
 
-      loadSection("header-placeholder", "header.html");
-      loadSection("hero-placeholder", "hero.html");
-      loadSection("search-placeholder", "search.html");
-      loadSection("Section1-placeholder", "section1.html");
-      loadSection("Section2-placeholder", "section2.html");
-      loadSection("Section3-placeholder", "section3.html");
-      loadSection("Section4-placeholder", "section4.html");
-      loadSection("Section5-placeholder", "section5.html");
-      loadSection("footer-placeholder", "footer.html");
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="bg-[#f5f5f5] text-[#2b1b12]">
+    <header id="site-header"></header>
+
+    <main id="site-main"></main>
+
+    <footer id="site-footer" class="bg-[#ddc7bb]"></footer>
+
+    <script type="module" src="./js/loader.js"></script>
   </body>
 </html>
