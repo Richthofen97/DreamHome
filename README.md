@@ -26,17 +26,29 @@ Responsive behaviour will be implemented afterwards.
 
 ## Page Structure
 
-The website is organised as a **single-page layout** with the following sections:
+The website is organised as a **single-page layout** with the following structure:
 
-1. Header / Navigation
-2. Hero Section
-3. Search Bar
-4. About / Statistics
-5. Why Choose Us
-6. Popular Residences
-7. Testimonials
-8. Contact / Call to Action
-9. Footer
+```
+DreamHome/
+├─ index.html
+├─ components/
+│ ├─ site-header.html
+│ ├─ hero-section.html
+│ ├─ property-search.html
+│ ├─ about-section.html
+│ ├─ features-section.html
+│ ├─ residences-section.html
+│ ├─ testimonials-section.html
+│ ├─ support-section.html
+│ └─ site-footer.html
+├─ js/
+│ ├─ buildIn.js
+│ └─ loader.js
+├─ images/
+│ └─ image.png
+└─ css/
+└─ style.css
+```
 
 ---
 
@@ -78,9 +90,9 @@ Typical workflow:
 Example branch names:
 
 - `docs/add-readme`
-- `feature/navbar`
-- `feature/hero-section`
-- `feature/property-cards`
+- `feat/update-navbar`
+- `feat/js`
+- `style/css`
 
 ---
 
